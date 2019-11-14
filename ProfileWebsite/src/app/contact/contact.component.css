@@ -1,0 +1,44 @@
+.tel{
+    color:blue;
+}
+.map{
+    color:red;
+}
+.envelope{
+    color:dodgerblue;
+}
+.text{
+    color:  black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.card{
+    border: 1.2px groove gray;
+    box-shadow: 17px 13px 18px -9px rgba(191,191,191,1);
+}
+.facebook{
+    color:black;
+}
+.instagram{
+    color: black;
+}
+.linkedin{
+    color: black;
+}
+.facebook:hover{
+    color: blue;
+}
+.instagram:hover{
+    color:fuchsia;  
+}
+.linkedin:hover{
+    color: dodgerblue;
+}
+.heart{
+    color:red;
+}
+.telegram{
+    color:dodgerblue;
+}
+.github{
+    color:black;
+}

@@ -1,0 +1,39 @@
+.skills{
+border: none;
+}
+.card{
+    border: none;
+}
+.resize{
+    width: 30px;
+    height: 30px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.center{
+    margin:0 30%;
+}
+.color-gray{
+    color: gray;
+}
+.font-12{
+    font-size: 12px;
+}
+.align-center{
+    text-align: center;
+}
+.border-1{
+    border:1px solid lightgray;
+    border-radius: 20px;
+}
+.border-1-gray{
+    border: 1px solid gray;
+    border-radius:20px;
+}
+.text-decoration{
+    text-decoration: none;
+    color: black;
+}
+.cursor-pointer{
+    cursor: pointer;
+}
