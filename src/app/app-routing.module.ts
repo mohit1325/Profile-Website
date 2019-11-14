@@ -6,9 +6,9 @@ import { ExperiencesComponent } from './experiences/experiences.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 const routes: Routes = [
-  {path: '' , redirectTo: 'home', pathMatch: 'full'},
+  { path: '', component: HomeComponent },
+  {path: 'home' , redirectTo: '', pathMatch: 'full'},
   {path: 'resume', component: ResumeComponent},
-  {path: 'home' , component: HomeComponent},
   { path: 'experiences', component: ExperiencesComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'about', component: AboutComponent },
