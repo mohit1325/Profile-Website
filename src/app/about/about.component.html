@@ -1,12 +1,11 @@
 <div class="col-md-12 col-lg-12 col-xl-12 mt-5 mb-4">
     <div class="card mb-5">
         <div class="card-body">
-            <h4 class="card-title text-center font-weight-bold">SKILLS</h4>
+            <h4 class="card-title text-center font-weight-bold font-30">SKILLS<i class="fa fa-cogs ml-1 gray" aria-hidden="true"></i></h4>
             <div class="card-text mt-5">
                 <div class="row">
                     <div class="col-md-6 col-lg-4 col-sm-12 col-xl-3" *ngFor="let tech of technologies;let i=index">
-                        <!-- <div class="resize img-fluid"><img src="../../assets/{{imageValues[i]}}" class="img-fluid"></div> -->
-                        <div class="text-center">{{tech}}</div>
+                        <div class="text-center font-18">{{tech}}</div>
                         <div class="progress mt-3 mb-3">
                             <div class="progress-bar bg-success text-center" role="progressbar" [ngStyle]="{'width':progressValues[i]}"
                                 aria-valuenow="progressValues[i]" aria-valuemin="0" aria-valuemax="100">{{progressValues[i]}}</div>
@@ -18,21 +17,22 @@
     </div>
     <div class="card mt-5 mb-3">
         <div class="card-body">
-            <h4 class="card-title text-center font-weight-bold">Work Experiences</h4>
+            <h4 class="card-title text-center font-weight-bold font-30">Experiences<i class="fa fa-briefcase ml-1 brown" aria-hidden="true"></i></h4>
             <div class="card-text">
                 <div class="row">
-                    <div class="col-md-12 col-sm-12 col-lg-6 col-xl-6 mt-5">
-                        <div class="font-weight-bold align-center">Technology Consultant</div>
-                        <div class="color-gray font-12 mt-2 align-center">Morgan Stanley-August,2019-Present</div>
-                        <div class="font-12 mt-2 align-center">Providing consultation to Morgan Stanley for FRM and PWM
+                    <div class="col-md-12 col-sm-12 col-lg-12 col-xl-5 mt-5 border-experiences">
+                        <div class="font-weight-bold align-center font-24">Technology Consultant</div>
+                        <div class="color-gray font-12 mt-2 align-center font-18">Morgan Stanley-August,2019-Present</div>
+                        <div class="font-12 mt-2 align-center font-16">Providing consultation to Morgan Stanley for FRM and PWM
                             team.
                             Technologies/tools :- Java 8, Angular,
                             DB2, Sybase, Jenkins, Jira etc </div>
                     </div>
-                    <div class="col-md-12 col-sm-12 col-lg-6 col-xl-6 mt-5">
-                        <div class="font-weight-bold align-center">Trainee Analyst</div>
-                        <div class="color-gray font-12 mt-2 align-center">Wissen Technology-June,2019-Present</div>
-                        <div class="font-12 mt-2 align-center">Gone through intensive TAP for 2 months which includes
+                    <div class="col-md-12 col-sm-12 col-lg-12 col-xl-2 mt-5"></div>
+                    <div class="col-md-12 col-sm-12 col-lg-12 col-xl-5 mt-5 border-experiences">
+                        <div class="font-weight-bold align-center font-24">Trainee Analyst</div>
+                        <div class="color-gray font-12 mt-2 align-center font-18">Wissen Technology-June,2019-Present</div>
+                        <div class="font-12 mt-2 align-center font-16">Gone through intensive TAP for 2 months which includes
                             learning of technologies/Tools like Java, Spring, DBMS, Angular,
                             React, Devops, Microservice Architecture e.t.c.</div>
                     </div>
@@ -42,37 +42,37 @@
     </div>
     <div class="card mt-5 mb-3">
         <div class="card-body">
-            <h4 class="card-title text-center font-weight-bold">Achievements</h4>
+            <h4 class="card-title text-center font-weight-bold font-30">Achievements<i class="fa fa-trophy ml-1 golden" aria-hidden="true"></i></h4>
             <div class="card-text">
                 <div class="row">
-                    <div class="col-md-4 col-sm-12 col-lg-4 col-xl-4 mt-5">
-                        <div class="card border-1">
-                            <div class="card-body">
-                                <div class="font-weight-bold align-center">Microsoft | Google</div>
-                                <div class="color-gray font-12 mt-2 align-center">Web Development and Advertising</div>
-                                <div class="font-12 mt-2 align-center">Microsoft Technology Associate: Certified in web
+                    <div class="col-md-12 col-sm-12 col-lg-12 col-xl-4 mt-5">
+                        <div class="card">
+                            <div class="card-body border-achievements">
+                                <div class="font-weight-bold align-center font-24">Microsoft | Google</div>
+                                <div class="color-gray font-12 mt-2 align-center font-18">Web Development and Advertising</div>
+                                <div class="font-12 mt-2 align-center font-16">Microsoft Technology Associate: Certified in web
                                     development consisting of cordova applications<br>
                                     Google Adwords : Certified by Google Academy of Ads</div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-12 col-lg-4 col-xl-4 mt-5">
-                        <div class="card border-1">
-                            <div class="card-body">
-                                <div class="font-weight-bold align-center">JP Morgan</div>
-                                <div class="color-gray font-12 mt-2 align-center">Technical Volunteering</div>
-                                <div class="font-12 mt-2 align-center">Part of Code For Good Hackathon held by JP
+                    <div class="col-md-12 col-sm-12 col-lg-12 col-xl-4 mt-5">
+                        <div class="card">
+                            <div class="card-body border-achievements">
+                                <div class="font-weight-bold align-center font-24">JP Morgan</div>
+                                <div class="color-gray font-12 mt-2 align-center font-18">Technical Volunteering</div>
+                                <div class="font-12 mt-2 align-center font-16">Part of Code For Good Hackathon held by JP
                                     Morgan, ​which aims to select group of developers across the world to help
                                     mitigate NGO’s problem with their coding skills</div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-12 col-lg-4 col-xl-4 mt-5">
-                        <div class="card border-1">
-                            <div class="card-body">
-                                <div class="font-weight-bold align-center">ZS</div>
-                                <div class="color-gray font-12 mt-2 align-center">ZS Case Challenge</div>
-                                <div class="font-12 mt-2 align-center">Ranked in top 10 winning teams among 1000+ participating teams across India. Case challenge consists of problems which require statistics and domain knowledge to crack.</div>
+                    <div class="col-md-12 col-sm-12 col-lg-12 col-xl-4 mt-5">
+                        <div class="card">
+                            <div class="card-body border-achievements">
+                                <div class="font-weight-bold align-center font-24">ZS</div>
+                                <div class="color-gray font-12 mt-2 align-center font-18">ZS Case Challenge</div>
+                                <div class="font-12 mt-2 align-center font-16">Ranked in top 10 winning teams among 1000+ participating teams across India. Case challenge consists of problems which require statistics and domain knowledge to crack.</div>
                             </div>
                         </div>
                     </div>
@@ -82,33 +82,33 @@
     </div>
     <div class="card mt-3 mb-5">
         <div class="card-body">
-            <h4 class="card-title text-center font-weight-bold">Project Highlights</h4>
+            <h4 class="card-title text-center font-weight-bold font-30">Project<i class="fa fa-pencil-square-o ml-1 blue" aria-hidden="true"></i></h4>
             <div class="card-text">
                 <div class="row">
-                    <div class="col-md-4 col-sm-12 col-lg-4 col-xl-4 mt-5">
-                        <div class="card border-1">
-                            <div class="card-body">
-                                <div class="font-weight-bold align-center cursor-pointer" (click)="goTo('inspirobot')">InsprioBot</div>
-                                <div class="color-gray font-12 mt-2 align-center">Technologies used: Numpy,Python,Rasa Core and Slack</div>
-                                <div class="font-12 mt-2 align-center">Inspirobot is a NLP based chatbot which is used to mitigate ongoing depression in modern world. It uses power of slack platform over which it is deployed to reach to people in need of it. It parses the user text and classifies into predefined classes such as personal,relationship,financial and critical depression then gives response accordingly to mitigate it. It also uses fallback policy which is provided by Rasa Core</div>
+                    <div class="col-md-12 col-sm-12 col-lg-12 col-xl-4 mt-5">
+                        <div class="card">
+                            <div class="card-body border-project">
+                                <div class="font-weight-bold align-center cursor-pointer font-24" (click)="goTo('inspirobot')">InsprioBot</div>
+                                <div class="color-gray font-12 mt-2 align-center font-18">Technologies used: Numpy,Python,Rasa Core and Slack</div>
+                                <div class="font-12 mt-2 align-center font-16">Inspirobot is a NLP based chatbot which is used to mitigate ongoing depression in modern world. It uses power of slack platform over which it is deployed to reach to people in need of it. It parses the user text and classifies into predefined classes such as personal,relationship,financial and critical depression then gives response accordingly to mitigate it. It also uses fallback policy which is provided by Rasa Core</div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-12 col-lg-4 col-xl-4 mt-5">
-                        <div class="card border-1">
-                            <div class="card-body">
-                                <div class="font-weight-bold align-center">JSON Editor</div>
-                                <div class="color-gray font-12 mt-2 align-center">Technology used: Angular</div>
-                                <div class="font-12 mt-2 align-center">JSON Editor is POC project which I developed completely from scratch at Morgan Stanley. It is an editor where JSON is recieved from the service and is converted to Simplified structure usable for editing and addition of another fields. It supports all the features of text editor such as Undo,Redo,Expand,Collapse,Copy,Paste and Download as JSON file.</div>
+                    <div class="col-md-12 col-sm-12 col-lg-12 col-xl-4 mt-5">
+                        <div class="card">
+                            <div class="card-body border-project">
+                                <div class="font-weight-bold align-center font-24">JSON Editor</div>
+                                <div class="color-gray font-12 mt-2 align-center font-18">Technology used: Angular,HTML,CSS,Javascript,Bootstrap</div>
+                                <div class="font-12 mt-2 align-center font-16">JSON Editor is POC project which I developed completely from scratch at Morgan Stanley. It is an editor where JSON is recieved from the service and is converted to Simplified structure usable for editing and addition of another fields. It supports all the features of text editor such as Undo,Redo,Expand,Collapse,Copy,Paste and Download as JSON file.</div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-12 col-lg-4 col-xl-4 mt-5">
-                        <div class="card border-1">
-                            <div class="card-body">
-                                <div class="font-weight-bold align-center cursor-pointer" (click)="goTo('BIRT')">Business Intelligence Reporting Tool</div>
-                                <div class="color-gray font-12 mt-2 align-center">Technologies used: Spring,JDBC, JPA, Hibernate, MySQL,SwaggerUI,Angular,Gridster</div>
-                                <div class="font-12 mt-2 align-center">BIRT is a Business Intelligence Reporting Tool which generates Reports based on data which is fetched from either of the datasources. Datasource can be REST API datasource or database or combination of both. The reports which are generated are gridbased reports or graphical datasource. Sorting, Pagination etc functionality are provided.</div>
+                    <div class="col-md-12 col-sm-12 col-lg-12 col-xl-4 mt-5">
+                        <div class="card">
+                            <div class="card-body border-project">
+                                <div class="font-weight-bold align-center cursor-pointer font-24" (click)="goTo('BIRT')">Business Intelligence Reporting Tool</div>
+                                <div class="color-gray font-12 mt-2 align-center font-18">Technologies used: Spring,JDBC, JPA, Hibernate, MySQL,SwaggerUI,Angular,Gridster</div>
+                                <div class="font-12 mt-2 align-center font-16">BIRT is a Business Intelligence Reporting Tool which generates Reports based on data which is fetched from either of the datasources. Datasource can be REST API datasource or database or combination of both. The reports which are generated are gridbased reports or graphical datasource. Sorting, Pagination etc functionality are provided.</div>
                             </div>
                         </div>
                     </div>

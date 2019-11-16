@@ -37,3 +37,75 @@ border: none;
 .cursor-pointer{
     cursor: pointer;
 }
+.font-18{
+    font-size: 18px;
+}
+.font-30{
+    font-size: 30px;
+}
+.font-22{
+    font-size: 22px;
+}
+.font-24{
+    font-size: 24px;
+}
+.font-16{
+    font-size: 16px;
+}
+.golden{
+    color: goldenrod;
+}
+.blue{
+    color: lightblue;
+}
+.brown{
+    color: burlywood;
+}
+.gray{
+    color: grey;
+}
+.ht-200{
+    height: 200px;
+}
+.bg-gray{
+background: gray;
+}
+.ht-300{
+    height: 300px;
+}
+.ht-450{
+    height: 450px;
+}
+.ht-500{
+    height: 500px;
+}
+.border-experiences{
+    border: 1px solid lightgray;
+    border-radius: 20px;
+}
+.border-achievements{
+    border: 1px solid lightgray;
+    border-radius: 20px;
+}
+.border-project{
+    border: 1px solid lightgray;
+    border-radius: 20px; 
+}
+@media only screen and (min-width:1200px){
+
+    .border-experiences{
+        border: 1px solid lightgray;
+        border-radius: 20px;
+        height: 200px;
+    }
+    .border-achievements{
+        border: 1px solid lightgray;
+        border-radius: 20px;
+        height: 280px;
+    }
+    .border-project{
+        border: 1px solid lightgray;
+        border-radius: 20px;
+        height: 450px; 
+    }
+}
