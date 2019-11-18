@@ -10,6 +10,10 @@ import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { ExperiencesComponent } from './experiences/experiences.component';
 import { AboutComponent } from './about/about.component';
+import {ReactiveFormsModule} from '@angular/forms';
+import { AngularFireModule } from 'angularfire2';
+import { environment } from '../environments/environment';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -24,7 +28,10 @@ import { AboutComponent } from './about/about.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+    AngularFireModule.initializeApp(environment.firebase),
   ],
   providers: [],
   bootstrap: [AppComponent]
