@@ -1,0 +1,16 @@
+<div *ngIf="!loaded" class="loading d-flex align-items-center text-center justify-content-center">
+    <img src="assets/loading.gif">
+</div>
+<div *ngIf="loaded">
+    <div class="app-container">
+        <div class="app-item">
+            <app-navbar></app-navbar>
+        </div>
+        <div class="app-item">
+            <router-outlet></router-outlet>
+        </div>
+        <div class="app-item mt-auto pt-4">
+            <app-footer></app-footer>
+        </div>
+    </div>
+</div>

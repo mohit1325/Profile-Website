@@ -1,0 +1,88 @@
+@media only screen and (min-width:700px){
+.navbar-container{
+    display: flex;
+    height:50px;
+    background-color: black;
+    padding:0;
+    margin:0;
+}
+.navbar-item{
+    flex:0 1 200px;
+    font-size:18px;
+    font-weight: bold;
+    color:white;
+    text-align: center;
+    align-self: stretch;
+    padding-top:0.5em;
+    cursor: pointer;
+    text-decoration: none;
+    outline-style: none; -moz-outline-style:none;
+    
+}
+.active{
+    background: red;
+    outline-style: none; -moz-outline-style:none;
+}
+.navbar-wrapper{
+    position: fixed;
+    width:100%;
+    z-index:3;
+}
+.navbar-mobile{
+    display: none;
+}
+.resume-download{
+    color:white;
+    text-decoration:none;
+}
+}
+@media only screen and (max-width:699px){
+ .navbar-container{
+    display: flex;
+    height:70px;
+    background-color: black;
+    padding:0;
+    margin:0;
+    flex-direction: column;
+}
+.navbar-item{
+    flex:0 1 200px;
+    font-size:18px;
+    font-weight: bold;
+    color:white;
+    text-align: center;
+    align-self: stretch;
+    text-decoration:none;
+    padding-top:0.5em;
+    cursor: pointer;
+}
+.active{
+    background: red;
+}
+.navbar-wrapper{
+    position: fixed;
+    width:100%;
+    z-index:3;
+}
+.navbar-laptop{
+    display: none;
+}
+.fa-chevron-down{
+    color:white;
+}
+.navbar-brand{
+    color:white;
+    font-size:28px;
+}   
+.navbar-brand{
+    font-weight: bold;
+}
+.navbar-list{
+    height:200px;
+    background:black;
+}
+.resume-download{
+    color:white;
+    text-decoration:none;
+}
+}

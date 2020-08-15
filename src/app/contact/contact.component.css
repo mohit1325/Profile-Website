@@ -1,0 +1,107 @@
+@media only screen and (min-width:700px){
+.tel{
+    color:blue;
+}
+.map{
+    color:red;
+}
+.envelope{
+    color:dodgerblue;
+}
+.text{
+    color:  black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.card{
+    border: 2px groove gray;
+    box-shadow: 17px 13px 18px -9px rgba(191,191,191,1);
+}
+.facebook{
+    color:black;
+}
+.instagram{
+    color: black;
+}
+.linkedin{
+    color: black;
+}
+.facebook:hover{
+    color: blue;
+}
+.instagram:hover{
+    color:fuchsia;  
+}
+.linkedin:hover{
+    color: dodgerblue;
+}
+.heart{
+    color:red;
+}
+.telegram{
+    color:dodgerblue;
+}
+.github{
+    color:black;
+}
+.contact-container{
+    display: flex;
+    justify-content:center;
+}
+.container-margin{
+    margin-top:3em;
+}
+}
+@media only screen and (max-width:699px){
+    .tel{
+    color:blue;
+}
+.map{
+    color:red;
+}
+.envelope{
+    color:dodgerblue;
+}
+.text{
+    color:  black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.card{
+    border: 2px groove gray;
+    box-shadow: 17px 13px 18px -9px rgba(191,191,191,1);
+}
+.facebook{
+    color:black;
+}
+.instagram{
+    color: black;
+}
+.linkedin{
+    color: black;
+}
+.facebook:hover{
+    color: blue;
+}
+.instagram:hover{
+    color:fuchsia;  
+}
+.linkedin:hover{
+    color: dodgerblue;
+}
+.heart{
+    color:red;
+}
+.telegram{
+    color:dodgerblue;
+}
+.github{
+    color:black;
+}
+.contact-container{
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+}
+.container-margin{
+    margin-top:3em;
+}
+}

@@ -1,0 +1,78 @@
+.footer{
+    background:transparent;
+ }
+@media only screen and (max-width:562px){ 
+.copyright{
+    display: inline-block;
+    color: black;
+    text-align: center;
+    font-size: 12px;
+    margin-left: 28%;
+    font-weight: bold;
+}
+.rights{
+    display: inline-block;
+    color: black;
+    text-align: center;
+    font-size: 12px;
+    margin-left:0.5%;
+    font-weight: bold;
+}
+.rights-reserved{
+    display: inline-block;
+    color: black;
+    text-align: center;
+    font-size: 12px;
+    margin-left:0.5%;
+    font-weight: bold;
+    margin-left:36%;
+    margin-top: 2%;   
+}
+}
+@media only screen and (max-width: 1278px) and (min-width:563px){
+.copyright{
+    display: inline-block;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 35%;
+}
+.rights{
+    display: inline-block;
+    color: black;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+.rights-reserved{
+    display: inline-block;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;   
+}
+}
+@media only screen and (min-width: 1279px) and (max-width:2000px){
+.copyright{
+    display: inline-block;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 38%;
+}
+.rights{
+    display: inline-block;
+    color: black;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+.rights-reserved{
+    display: inline-block;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;   
+}
+}
+.heart{
+    color: red;
+}

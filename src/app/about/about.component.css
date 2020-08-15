@@ -1,0 +1,35 @@
+.container-margin{
+    margin-top:5em;
+}
+.hlt-red{
+    color:red;
+}
+.hlt-size{
+    font-size: 35px;
+}
+.example-card {
+  max-width: 350px;
+}
+.skill-card {
+  max-width: 250px;
+}
+.project-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
+.project-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.project-item{
+    flex:0 1 auto;
+}
+.skill-item{
+    flex:0 1 250px;
+}
+.skill-header-image {
+  background-size: cover;
+}
+.experience-not-enough{
+    align-self: center;
+}

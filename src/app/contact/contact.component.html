@@ -1,0 +1,93 @@
+<div class="container-fluid container-margin">
+    <div class="contact-container">
+        <div class="contact-item wish-item pl-4 pr-4">
+            <div class="card mt-5">
+                <div class="card-body">
+                    <h5 class="card-title text-center"><i class="fa fa-heart mr-1 heart"></i>Always Feel To Get in Touch
+                    </h5>
+                    <div class="card-text mt-5 text-center font-italic">You may not know what wonderful things can
+                        happen over a
+                        phone call</div>
+                    <div class="card-text col-md-12 col-lg-12 col-xs-12 mt-3">
+                        <div class="location">
+                            <div class="row">
+                                <i class="fa fa-map-marker map mt-4"></i>
+                                <p class="ml-3 mt-3 pt-1 text">Bengaluru,India</p>
+                            </div>
+                        </div>
+                        <div class="phone">
+                            <div class="row">
+                                <i class="fa fa-phone mt-3 tel"></i>
+                                <p class="ml-3 mt-2 pt-1 text">+91-8850924884</p>
+                            </div>
+                        </div>
+                        <div class="mail">
+                            <div class="row">
+                                <i class="fa fa-envelope mt-3 envelope" aria-hidden="true"></i>
+                                <p class="ml-3 mt-2 pt-1 text">mohitshah1325@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-12 col-xs-12 mt-4">
+                        <a href="https://www.linkedin.com/in/mohitshah13398" class="ml-3 linkedin"><i
+                                class="fa fa-linkedin"></i></a>
+                        <a href="https://www.facebook.com/mohit.shah.102977" class="ml-3 facebook"><i
+                                class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                        <a href="https://www.instagram.com/mohitshah1325/" class="ml-3 instagram"><i
+                                class="fa fa-instagram" aria-hidden="true"></i></a>
+                        <a href="https://www.github.com/mohit1325" class="ml-3 github"><i class="fa fa-github github"
+                                aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contact-item reach-form pl-4 pr-4">
+            <div class="card mt-5 mb-5">
+                <div class="card-body">
+                    <h5 class="card-title text-center"><i class="fa fa-telegram telegram mr-2"></i>Send Message</h5>
+                    <div class="card-text mt-5 text-center font-italic">You can also send me messages. I would try to
+                        reply to it
+                        as soon as possible. Do mention the subject in the mail</div>
+                    <form class="mt-3" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1" class="font-weight-bold">Name</label>
+                            <input type="text" class="form-control" formControlName="name" id="exampleFormControlInput1"
+                                placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1" class="font-weight-bold">Email</label>
+                            <input type="email" class="form-control" required formControlName="email"
+                                id="exampleFormControlInput1" placeholder="name@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1" class="font-weight-bold">Subject</label>
+                            <input type="text" class="form-control" required formControlName="subject"
+                                id="exampleFormControlInput1" placeholder="Subject">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1" class="font-weight-bold">Message</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" formControlName="message"
+                                rows="3"></textarea>
+                        </div>
+                        <button class="btn btn-danger" [disabled]="!contactForm.valid">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- <div class="container-fluid">
+    <div class="row">
+        <div class="col-md-5 col-lg-4 col-xs-5">
+           
+        <div class="col-lg-1 col-md-1 col-xs-1">
+            Dummy div for aligning
+        </div>
+        <div class="col-md-6 col-lg-7 col-xs-6">
+           
+    </div>
+</div> -->
