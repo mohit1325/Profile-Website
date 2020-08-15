@@ -39,7 +39,7 @@
 @media only screen and (max-width:699px){
  .navbar-container{
     display: flex;
-    height:70px;
+    height:60px;
     background-color: black;
     padding:0;
     margin:0;
@@ -80,6 +80,7 @@
 .navbar-list{
     height:200px;
     background:black;
+    z-index:4;
 }
 .resume-download{
     color:white;
