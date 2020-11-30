@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 
 @Component({
   selector: 'app-about',
@@ -11,10 +12,23 @@ export class AboutComponent implements OnInit {
   skillSet: Array<any> = [];
   experience: Array<any> = [];
   achievements: Array<any> = [];
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
     this.project = [
+      {
+        name: 'CHESS CSP',
+        shortName: 'CHESS CSP',
+        description: `Web based trading application that is used by Morgan Stanley PWM for performing trade activities at ASX (Australian Stock exchange).Roles performed are developing UI/UX for the application.
+        Performing UI Automation using Selenium for new feature in development. Testing and reviewing the code using Jasmine and Karma and collaborating with teams for developing new features. Interacting with Product owners and stakeholders over new feature in upcoming sprint (following Agile for development)`,
+        techUsed: 'Angular 8,Spring Boot,Oracle DB, SQLDeveloper,Bootstrap,Jasmine,Selenium,Ag-grid'
+      },
+      {
+        name: 'Fee Billing',
+        shortName: 'Fee Billing',
+        description: `Web based bill generation application that is used by Morgan Stanley PWM for generating bills to clients for their positions/holdings. Roles performed are developing UI/UX for the application. Responsible for writing backend code using Spring MVC and test it using JUnit for new features. Responsible for migrating code written in C++ to Java and bring down the bill generation process from 12 hours to 40 minutes using Multi-threading.Responsible for new UI/UX changes for the application from older ExtJs to Angular 8`,
+        techUsed: 'Angular 7, Ag-grid,Spring MVC, DB2 database,JUnit,Jasmine'
+      },
       {
         name: 'Nucleus aka BIRT',
         shortName: 'Business Intelligence Reporting Tool',
@@ -24,19 +38,17 @@ export class AboutComponent implements OnInit {
                       reports which are generated
                       are gridbased reports or graphical datasource. Sorting, Pagination etc functionality are
                       provided`,
-        techUsed: 'Spring MVC, Hibernate, Spring Security, Angular 8, Gridster'
+        techUsed: 'Spring MVC, Hibernate, Spring Security, Angular 8, Gridster',
+        link: 'https://github.com/mohit1325/Nucleus'
       },
       {
-        name: 'JSONE',
-        shortName: 'Json Editor',
-        description: `JSON Editor is POC project which I developed completely from scratch at Morgan Stanley. It is an editor where JSON is recieved from the service and is converted to Simplified structure usable for editing and addition of another fields. It supports all the features of text editor such as Undo,Redo,Expand,Collapse,Copy,Paste and Download as JSON file`,
-        techUsed: 'Angular 8 , Bootstrap, Flexbox'
-      },
-      {
-        name: 'IB',
-        shortName: 'Inspirobot',
-        description: `Inspirobot is a NLP based chatbot which is used to mitigate ongoing depression in modern world. It uses power of slack platform over which it is deployed to reach to people in need of it. It parses the user text and classifies into predefined classes such as personal,relationship,financial and critical depression then gives response accordingly to mitigate it`,
-        techUsed: 'Numpy, Pandas, Rasa Core,Slack and NLU using SVM Classifier'
+        name: 'NewsShots',
+        shortName: 'News Shots',
+        description: `Web based application with RESTful API Architecture curating news articles from Guardian Open API into grid based responsive
+layout.Features include category wise filtering news articles, News articles in shorts, social media sharing options like Facebook and
+Twitter, Bookmarking news articles through utilization of Web Local Storage`,
+        techUsed: 'Angular 8, NodeJS, Express JS, Angular Material, CSS Flexbox',
+        link: 'https://github.com/mohit1325/NewsShots'
       }
     ];
     this.skillSet = [
@@ -68,15 +80,20 @@ export class AboutComponent implements OnInit {
         name: 'Hibernate',
         photoUrl: 'assets/hibernate.png'
       },
+      {
+        name: 'Node Js',
+        photoUrl: 'assets/nodejs.png'
+      }
     ];
     this.experience = [
       {
         photoUrl: 'assets/wissen.png',
         name: 'Wissen Technology',
         designation: 'Associate Software Engineer',
-        description: `Worked and collaborated with various teams and performed discussions with stakeholders to develop features and modules in CHESS CSP Application. 
-                    Mentored and guided a team of 3 on new feature development and deployment in existing project.
-                    Worked on improving performance of Billing Software FEE BILLING by introducing parallel processing pipelines which improved performance by 12% roughly`
+        description: `Worked on designing and developing multithreaded architecture pipeline for Fee-Billing application which brought down the
+operation time of generating bills for 4000 clients from 12 hours to 40 minutes.Worked on developing User Interface for EBBOS CHESS application which is web-based trading software.Solely designed, developed and deployed JSON Editor application which is used internally by SDE to edit, save and convert JSON to
+other formats like XML with all the features of modern text editors.Worked on technologies such as Spring, Hibernate, Angular 8, MySQL, Oracle 11g, SQL Developer, DB2, Junit, Karma, Jasmine,
+Selenium for Automation Testing`
       }
     ];
     this.achievements = [
@@ -99,6 +116,9 @@ export class AboutComponent implements OnInit {
         title: 'C Programming contest'
       }
     ];
+  }
+  navigateTo(link) {
+    window.location.href = link;
   }
 
 

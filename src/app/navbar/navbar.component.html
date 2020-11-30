@@ -1,23 +1,22 @@
-<nav class="navbar-wrapper">
-    <div class="navbar-container navbar-laptop">
-        <div class="navbar-item ml-3" routerLink="">
-            MOHIT SHAH
-        </div>
-        <div class="navbar-item ml-auto" routerLink="" routerLinkActive="active"
-            [routerLinkActiveOptions]="{exact: true}">Home</div>
-        <div class="navbar-item" routerLink="contact" routerLinkActive="active">Contact</div>
-        <a class="navbar-item" href="assets/resume.pdf" download>Resume<i class="fa fa-download ml-2"></i></a>
-    </div>
-    <div class="navbar-mobile navbar-container">
-        <div class="navbar-brand" (click)="showMenu=!showMenu;"><i class="fa fa-bars ml-5 mr-5"></i>MOHIT SHAH</div>
-        <ng-container *ngIf="showMenu">
-            <div class="navbar-container navbar-list" (click)="showMenu=!showMenu;">
-                <div class="navbar-item" routerLink="" routerLinkActive="active"
-                    [routerLinkActiveOptions]="{exact: true}">
-                    Home</div>
-                <div class="navbar-item" routerLink="contact" routerLinkActive="active">Contact</div>
-                <div class="navbar-item" (click)="download($event)">Resume<i class="fa fa-download ml-2"></i></div>
-            </div>
-        </ng-container>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="navbar-brand">MOHIT SHAH</div>
+    <button class="navbar-toggler btn btn-outline-primary" type="button" data-toggle="collapse"
+        data-target="#navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+        (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed" aria-controls="navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" [ngbCollapse]="isCollapsed">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item ml-2">
+                <a class="nav-link" routerLink="" routerLinkActive="active"
+                    [routerLinkActiveOptions]="{exact: true}">Home</a>
+            </li>
+            <li class="nav-item ml-2">
+                <a class="nav-link" routerLink="contact" routerLinkActive="active">Contact</a>
+            </li>
+            <li class="nav-item ml-2">
+                <a class="nav-link" href="assets/resume.pdf" download>Resume<i class="fa fa-download ml-2"></i></a>
+            </li>
+        </ul>
     </div>
 </nav>
