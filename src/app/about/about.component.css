@@ -22,7 +22,7 @@
     flex-wrap: wrap;
 }
 .project-item{
-    flex:0 1 auto;
+    flex:1 1 auto;
 }
 .skill-item{
     flex:0 1 250px;
